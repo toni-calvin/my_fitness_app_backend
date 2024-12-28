@@ -6,6 +6,7 @@ const ExerciseSchema = new mongoose.Schema({
   reps: Number,
   rir: Number,
   weight: Number,
+  date: { type: Date, default: Date.now },
 });
 
 module.exports = mongoose.model('Exercise', ExerciseSchema);
